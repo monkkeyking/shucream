@@ -5,7 +5,7 @@ const fileURL = (filePath: string) => {
   return `file://${filePath.replace(/\\/g, '/')}`;
 };
 
-const configPath = path.resolve(process.cwd(), 'cream.cjs');
+const configPath = path.resolve(process.cwd(), 'cream.js');
 
 const loadConfig = async () => {
   if (!fs.existsSync(configPath)) {
